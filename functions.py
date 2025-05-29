@@ -10,7 +10,14 @@ def length(data):
         length += 1
     return length
 
-def sort(data):
+def merge_sorted_lists(list1, list2):
+    result_list = []
+    result_list_length = 0 # Using a counter since more efficient then using length() each time
+    total_list_length = length(list1) + length(list2) # Total number of items
+    while result_list_length < total_list_length:
+        return
+        
+def sort(data): # Merge sort
     return
 
 def average(data):
