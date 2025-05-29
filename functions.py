@@ -37,4 +37,8 @@ def quartile(data):
     return
 
 def standard_deviation(data):
-    return
+    mean = average(data)
+    difference_squared_data = []
+    for data_point in data:
+        difference_squared_data.append((data_point - mean) ** 2)
+    return (sum(difference_squared_data) / (length(data) - 1)) ** 0.5
